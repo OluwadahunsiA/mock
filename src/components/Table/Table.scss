@@ -1,0 +1,120 @@
+$borderline:1px solid #e2e2e2;
+$font:'Nunito';
+
+@mixin textfont{
+       font-family:$font;
+       
+       color: #4f4f4f;
+       font-weight: bold;
+       font-size: 15px;
+       line-height:20px;
+       font-style:normal;
+       font-weight:bold;
+}
+
+.main__table{
+    position:relative;
+    width:1200px;
+    height:85%;
+    margin:16px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #FFFFFF;
+   box-shadow: -1px -1px 20px 1px rgba(0, 0, 0, 0.009),
+   1px 1px 20px 1px rgba(0, 0, 0, 0.009);
+    z-index: 3;
+
+    @include textfont;
+
+    .table__loading{
+        position:absolute;
+        color:#235390;
+        left:50%;
+        top:50%;
+        transform: translateX(-50%);
+       
+    }
+    
+
+}
+
+
+.table__head{
+    width:150px;
+    height:73px;
+    background-color: #F1FCFF;
+    color:#235390;
+    font-weight:800;
+    line-height: 27px;
+    font-size:20px;
+    text-align: center;
+
+    position: -webkit-sticky; // this is for all Safari (Desktop & iOS), not for Chrome
+    position: sticky;
+    top: 0px;
+    z-index: 10; // any positive value, layer order is global
+  
+   
+
+    &:first-child{
+        width:1px;
+        border-top-left-radius: 20px;
+        border-right:$borderline
+       
+    }
+
+    &:last-child{
+        border-top-right-radius: 20px;
+       
+       
+    }
+
+
+    &__content{
+        height:100%;
+        align-items: center;
+        display:flex;
+        justify-content: center;
+        width:90%; 
+
+    }
+}
+
+.main__table__row{
+    cursor:pointer;
+    height:51px;
+    
+   
+
+    &:hover{
+        background-color: #F5E6FE;
+    }
+
+    td:first-child{
+        width:30px;
+    }
+
+    &__box {
+        width: 73px;
+        height: 51px;
+        border-bottom:$borderline;
+
+        &:first-child{
+            border-right: $borderline;
+            
+        }
+
+
+        &__single {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+        }
+
+    }
+
+}
+
+
