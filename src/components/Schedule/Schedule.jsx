@@ -28,9 +28,7 @@ export const Schedule = ({person,people,choice, setChoice,lessonDetail,setLesson
         const [taskExpand,setTaskExpand] = React.useState(false)
 
 
-        // const [scores,setScores] = React.useState([])
 
-        // const getStudentData = studentData[person]
 
         // Fetch student data here
 
@@ -46,7 +44,7 @@ export const Schedule = ({person,people,choice, setChoice,lessonDetail,setLesson
 
     function displayLessonDetail(student){
       console.log(student)
-      // setLessonDetail(!lessonDetail)
+      
 
     }
 

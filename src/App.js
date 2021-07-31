@@ -11,9 +11,6 @@ const App = () => {
 
   const [showPlatform, setShowPlatform] = React.useState(false);
 
-  // function handleLogin() {
-  //   setShowPlatform(true);
-  // }
   function displayPlatform() {
     setShowPlatform(!showPlatform);
     console.log("running");

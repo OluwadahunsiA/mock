@@ -4,7 +4,7 @@ export const TableRow = ({data,choice, setChoice,displayLessonDetail,setSelected
 
 
 function rowDetailHandler(value){
-    // setSelectedRow(value)
+   
     if (choice === 'grades'){
           setSelectedRow(data.id)
           setLessonDetail(!lessonDetail)
@@ -30,5 +30,4 @@ function rowDetailHandler(value){
     )
 }
 
-// {choice === "grades" ? ()=>displayLessonDetail() : ()=>{}}
-// ()=>setSelectedRow(data.id)
+

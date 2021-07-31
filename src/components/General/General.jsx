@@ -5,7 +5,7 @@ import {People} from './People.jsx'
 import {data} from './People.js'
 import { Schedule } from "../Schedule";
 import arrow from './assets/moreArrow.svg'
-// import {studentData} from '../studentData'
+
 
 
 const PICTURESIZE= 105;
@@ -21,7 +21,7 @@ export const General = () => {
     const [choice, setChoice] = React.useState("grades")
     const [lessonDetail, setLessonDetail] = React.useState(false)
 
-    // const [studentdata,setStudentData] = React.useState(studentData[0])
+
     
     
    
@@ -108,7 +108,7 @@ export const General = () => {
 
             {student ? <div className="general__container__content-underline-student"></div> : 
             <div className="general__container__content-underline-student" style={{border:"2px solid transparent",backgroundColor:'transparent'}}></div>}
-            {/* {group && <div className="general__container__content-underline-group"></div>} */}
+           
             {group ? <div className="general__container__content-underline-group"></div>:
             <div className="general__container__content-underline-group"style={{border:"2px solid transparent",backgroundColor:'transparent'}}></div>}
             </div>

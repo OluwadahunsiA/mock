@@ -1,5 +1,5 @@
 import React from 'react'
-// import {data} from './people'
+
 
 export const People = ({image,name,selected,active}) => {
 
